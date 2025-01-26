@@ -3,13 +3,111 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>login Page</title>
+    <title>Web Page Design</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f4f4f4;
+        }
+        .container {
+            width: 50%;
+            min-width: 300px;
+            max-width: 600px;
+            background-color: white;
+            border: 2px solid black;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 10px 20px;
+            border-bottom: 2px solid black;
+            background-color: #fefefe;
+        }
+        .header img {
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+        }
+        .header a {
+            text-decoration: none;
+            color: black;
+            margin: 0 10px;
+            font-weight: bold;
+        }
+        .content {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            justify-content: center;
+            padding: 20px;
+        }
+        .left-section img {
+            width: 100px;
+            height: 130px;
+            border: 2px solid black;
+            border-radius: 5px;
+        }
+        .right-section {
+            margin-left: 20px;
+            text-align: left;
+        }
+        .right-section h1 {
+            margin: 0;
+            font-size: 20px;
+        }
+        .right-section p {
+            margin: 10px 0;
+            font-size: 14px;
+        }
+        .cv-button {
+            text-align: center;
+            margin-top: 10px;
+        }
+        .cv-button button {
+            padding: 8px 16px;
+            background-color: black;
+            color: rgb(232, 19, 19);
+            border: none;
+            border-radius: 20px;
+            cursor: pointer;
+            font-size: 14px;
+        }
+        .cv-button button:hover {
+            background-color: gray;
+        }
+    </style>
 </head>
 <body>
-    
-    <h1>This is login page</h1>
-    <button>login</button>
-    <button>cart</button>
-    <a href="index8.html">login page</a>
+    <div class="container">
+        <div class="header">
+            <img src="https://cdn.icon-icons.com/icons2/3150/PNG/512/user_profile_female_icon_192701.png" alt="Profile Icon">
+            <div>
+                <a href="index6.html">Profile</a>
+                <a href="index3.html">Project</a>
+            </div>
+        </div>
+        <div class="content">
+            <div class="left-section">
+                <img src="https://media.licdn.com/dms/image/v2/D4E03AQGrMZtew6_OLQ/profile-displayphoto-shrink_800_800/B4EZQpqFY4HsAg-/0/1735865687026?e=1743033600&v=beta&t=iis6ZP3m3MvXlT9AZvh_U9izdWS3UoAF5UuuL_AiIbQ" alt="Person Image">
+            </div>
+            <div class="right-section">
+                <h1>HARDI RAUT</h1>
+                <p>A passionate developer learning web technologies and working on exciting projects</p>
+                <div class="cv-button">
+                    <button onclick="window.location.href='cv.pdf'">Download CV</button>
+                </div>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
